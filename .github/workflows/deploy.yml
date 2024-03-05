@@ -37,7 +37,7 @@ jobs:
         --runtime=go121
         --region=europe-central2
         --source=.
-        --entry-point=solarkit-weather
+        --entry-point=solarkitWeather
         --trigger-http
         --allow-unauthenticated
         --set-secrets='/etc/secrets/weatherkit-weather/latest=solarkit-weatherkit-development:latest'

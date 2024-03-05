@@ -11,7 +11,7 @@ type Client struct {
 
 func init() {
 	// register function handler
-	functions.HTTP("solarkit-weather", handleWeatherRequest)
+	functions.HTTP("solarkitWeather", handleWeatherRequest)
 }
 
 func handleWeatherRequest(w http.ResponseWriter, r *http.Request) {
