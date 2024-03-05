@@ -14,8 +14,6 @@ jobs:
     - uses: actions/setup-go@v5
       with:
         go-version: '1.21'
-    - run: go version
-    - run: ls -lah
     - run: go test -cover -v ./...
   # deploy-nativeruntime:
   # deploy-tailscale:
