@@ -22,6 +22,7 @@ jobs:
     name: "Deploy to GCF"
     needs: ['build'] # TODO: pull build from step, re-use
     steps:
+    - uses: actions/checkout@v4
     - name: Authenticate to Google Cloud
       uses: google-github-actions/auth@v0.8.0
       with:
