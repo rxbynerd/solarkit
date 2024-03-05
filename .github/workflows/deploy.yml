@@ -36,8 +36,9 @@ jobs:
         --gen2
         --runtime=go121
         --region=europe-central2
-        --source=.
+        --source=./weather
         --entry-point=solarkit-weather
         --trigger-http
         --allow-unauthenticated
         --set-secrets='/etc/secrets/weatherkit-weather/latest=solarkit-weatherkit-development:latest'
+        --set-env-vars=WEATHERKIT_APP_ID=net.rubynerd.solarkit,WEATHERKIT_TEAM_ID=abc123
