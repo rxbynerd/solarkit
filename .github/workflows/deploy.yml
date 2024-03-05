@@ -36,7 +36,7 @@ jobs:
         --gen2
         --runtime=go121
         --region=europe-central2
-        --source=./weather
+        --source=.
         --entry-point=solarkit-weather
         --trigger-http
         --allow-unauthenticated
